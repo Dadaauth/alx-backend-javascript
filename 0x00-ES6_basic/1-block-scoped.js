@@ -5,10 +5,8 @@ export default function taskBlock(trueOrFalse) {
   if (trueOrFalse) {
     const task = true;
     const task2 = false;
-    if (task){
-
-    }else if (task2) {
-        
+    function getTask() {
+      return [task, task2];
     }
   }
 
