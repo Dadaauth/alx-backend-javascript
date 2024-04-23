@@ -1,8 +1,8 @@
 export default function iterateThroughObject(reportWithIterator) {
-  let t_Str = '';
+  let tStr = '';
   for (const rp of reportWithIterator) {
-    t_Str += rp;
-    if (rp !== reportWithIterator[reportWithIterator.length - 1]) t_Str += ' | ';
+    tStr += rp;
+    if (rp !== reportWithIterator[reportWithIterator.length - 1]) tStr += ' | ';
   }
-  return t_Str;
+  return tStr;
 }
