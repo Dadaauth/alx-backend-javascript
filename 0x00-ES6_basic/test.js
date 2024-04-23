@@ -1,3 +1,3 @@
-import getSanFranciscoDescription from './6-string-interpolation.js';
+import createEmployeesObject from './11-createEmployeesObject.js';
 
-console.log(getSanFranciscoDescription());
+console.log(createEmployeesObject("Software", [ "Bob", "Sylvie" ]));
