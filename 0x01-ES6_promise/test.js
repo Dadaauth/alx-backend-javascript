@@ -1,7 +1,4 @@
-import handleProfileSignup from './6-final-user';
+import divideFunction from './8-try';
 
-const handle = async () => {
-    console.log(await handleProfileSignup("Bob", "Dylan", "bob_dylan.jpg"));
-}
-
-handle();
+console.log(divideFunction(10, 2));
+console.log(divideFunction(10, 0));
