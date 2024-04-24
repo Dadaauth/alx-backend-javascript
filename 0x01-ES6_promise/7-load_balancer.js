@@ -1,3 +1,3 @@
 export default async function loadBalancer(chinaDownload, USDownload) {
-    return Promise.any([chinaDownload, USDownload])
+  return Promise.any([chinaDownload, USDownload]);
 }
