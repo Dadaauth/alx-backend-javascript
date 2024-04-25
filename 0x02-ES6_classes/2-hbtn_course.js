@@ -7,7 +7,7 @@ export default class HolbertonClass {
     for (const student of students) if (typeof student !== 'string') throw TypeError('Students should be an array of strings');
     this._students = students;
   }
-  
+
   get name() {
     return this._name;
   }
