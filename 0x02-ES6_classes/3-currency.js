@@ -20,5 +20,5 @@ export default class Currency {
     if (typeof val === 'string') this._name = val;
   }
 
-  displayFullCurrency() {`${this._name} (${this._code})`}
+  displayFullCurrency() { return `${this._name} (${this._code})`; }
 }
