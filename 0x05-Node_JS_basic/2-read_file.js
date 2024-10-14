@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-module.exports = countStudents = (dataPath) => {
+const countStudents = (dataPath) => {
   if (!fs.existsSync(dataPath)) {
     throw new Error('Cannot load the database');
   }
@@ -12,8 +12,8 @@ module.exports = countStudents = (dataPath) => {
     .toString('utf-8')
     .trim()
     .split('\n');
-    const dbFieldNames = fLines[0].split(',');
-    const stGroups = {};
+  const dbFieldNames = fLines[0].split(',');
+  const stGroups = {};
   const studentPropNames = dbFieldNames.slice(0, dbFieldNames.length - 1);
 
   for (const line of fLines.slice(1)) {
@@ -37,3 +37,5 @@ module.exports = countStudents = (dataPath) => {
     console.log(`Number of students in ${field}: ${group.length}. List: ${studentNames}`);
   }
 };
+
+module.exports = countStudents;
